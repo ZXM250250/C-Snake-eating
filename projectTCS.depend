@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1622467219 source:c:\users\tonmin\desktop\projecttcs\colour.c
+	<stdio.h>
+
+1622514126 source:c:\users\tonmin\desktop\projecttcs\main.c
+	"headfunc.h"
+	"welcome.h"
+
+1622467219 source:c:\users\tonmin\desktop\projecttcs\new.c
+
+1622506853 c:\users\tonmin\desktop\projecttcs\headfunc.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<time.h>
+
+1622511623 c:\users\tonmin\desktop\projecttcs\welcome.h
+
+1622507445 source:c:\users\tonmin\desktop\projecttcs\tools.c
+	<windows.h>
+	<stdio.h>
+
+1622512102 source:c:\users\tonmin\desktop\projecttcs\welcome.c
+	<stdio.h>
+	"tools.h"
+	<windows.h>
+
+1622507445 c:\users\tonmin\desktop\projecttcs\tools.h
+
+1622513113 source:c:\users\tonmin\desktop\projecttcs\transfer.c
+
