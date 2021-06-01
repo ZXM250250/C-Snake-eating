@@ -106,7 +106,7 @@ int randFood(void)
 		while (1)
 		{
 			//保证X坐标是偶数 同时不应该出现在墙上(2, 54)
-			foodNode->x = rand() % 53 + 2;
+			foodNode->x = rand() % 53 + 3;
 
 			if (0 == foodNode->x % 2)
 			{
@@ -200,6 +200,8 @@ int moveKeyControl(void)
 			}
 		}
 
+
+
 		//按下F8加速
 		if (GetAsyncKeyState(VK_F8))
 		{
@@ -207,12 +209,16 @@ int moveKeyControl(void)
 			speedUp();
 		}
 
+
+
 		//按下F9减速
 		if (GetAsyncKeyState(VK_F9))
 		{
 			//增加睡眠的时间
 			speedDown();
 		}
+
+
 
 		//按下ESC键 结束游戏
 		if (GetAsyncKeyState(VK_ESCAPE))
@@ -300,7 +306,7 @@ int moveSnake(void)
 	snake_t *save = NULL;
     snake_t *head = gethead();
 
-    snake_t *foodNode = getfoodNode();
+
 	//分配新的节点
 	new = malloc(sizeof(snake_t));
 	if (NULL == new)
@@ -342,9 +348,11 @@ int moveSnake(void)
 	new->next = head;
 	sethead(new);
 
-	tmp = head;
+	tmp = gethead();
 	setColor(14);
 
+
+	snake_t *foodNode = getfoodNode();
 	//判断是否为食物
 	if ((new->x == foodNode->x) && (foodNode->y == new->y))
 	{
@@ -352,7 +360,7 @@ int moveSnake(void)
 		while (NULL != tmp)
 		{
 			gotoXY(tmp->x, tmp->y);
-			if (head == tmp)
+			if (gethead() == tmp)
 			{
 				printf("●");
 			}
@@ -375,7 +383,7 @@ int moveSnake(void)
 		while (NULL != tmp->next)
 		{
 			gotoXY(tmp->x, tmp->y);
-			if (head == tmp)
+			if (gethead() == tmp)
 			{
 				printf("●");
 			}
@@ -442,11 +450,14 @@ int isBitSelf(void)
 
 
 
+
+
 //销毁蛇
 int destroySnake(void)
 {
 	snake_t *tmp = NULL;
 	snake_t *save = NULL;
+
 
 	tmp = gethead();
 	while (NULL != tmp)
@@ -457,7 +468,7 @@ int destroySnake(void)
 		tmp = save;
 	}
 
-	sethead ( NULL);
+	sethead(NULL);
 
 	return 0;
 }
