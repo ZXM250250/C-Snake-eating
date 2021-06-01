@@ -48,7 +48,7 @@ int initSnake(void)
 	tmp = gethead();
 	while (NULL != tmp)
 	{
-		//设置蛇的颜色 14 黄色
+		//设置蛇的颜色 14 黄色  达到
 		setColor(14);
 		//定位光标
 		gotoXY(tmp->x, tmp->y);
