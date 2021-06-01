@@ -30,3 +30,35 @@
 
 1622513113 source:c:\users\tonmin\desktop\projecttcs\transfer.c
 
+1622520160 source:d:\Ã∞≥‘…ﬂ\c-\main.c
+
+1622515694 d:\Ã∞≥‘…ﬂ\c-\headfunc.h
+
+1622515694 d:\Ã∞≥‘…ﬂ\c-\welcome.h
+
+1622515694 source:d:\Ã∞≥‘…ﬂ\c-\tools.c
+	<windows.h>
+	<stdio.h>
+
+1622514848 source:d:\Ã∞≥‘…ﬂ\c-\welcome.c
+	<stdio.h>
+	"tools.h"
+	<windows.h>
+
+1622515694 d:\Ã∞≥‘…ﬂ\c-\tools.h
+
+1622520626 source:d:\Ã∞≥‘…ﬂ\c-\game_execute_logic.c
+	<stdio.h>
+
+1622516203 source:d:\Ã∞≥‘…ﬂ\c-\layout_map.c
+
+1622516203 source:d:\Ã∞≥‘…ﬂ\c-\song.c
+
+1622519729 source:d:\Ã∞≥‘…ﬂ\c-\variate_keep.c
+	<stdio.h>
+
+1622518638 source:d:\Ã∞≥‘…ﬂ\c-\information_layout.c
+
+1622518678 source:d:\Ã∞≥‘…ﬂ\c-\file_memory.c
+	<stdio.h>
+

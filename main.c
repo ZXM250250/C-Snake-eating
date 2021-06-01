@@ -1,5 +1,4 @@
-#include"headfunc.h"
-#include"welcome.h"
+
 int main()
 {
     int choice;
@@ -9,10 +8,13 @@ int main()
         if (choice != 1 && choice != 2 && choice != 3);
         else break;
     }
-    if (choice == 1)
+    if (choice == 1)                      //表示开始游戏
     {
-        //print_Map();
-        //start_Game();
+        printMap();   //绘制游戏界面的地图
+
+        showScoreTips();   //绘制游戏所得的分数和提示选项
+
+        initSnake();   //初始化贪吃蛇
     }
     else //tansfer(choice);
     return 0;
