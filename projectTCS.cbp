@@ -31,21 +31,33 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="headfunc.h" />
+		<Unit filename="file_memory.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="game_execute_logic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="information_layout.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="layout_map.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="new.c">
+		<Unit filename="song.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="tools.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="tools.h" />
+		<Unit filename="variate_keep.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="welcome.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="welcome.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
