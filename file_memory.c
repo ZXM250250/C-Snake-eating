@@ -37,3 +37,29 @@ int readFile(void)
 	//atoi --> 将字符串的数字转化为数字  "123" --> 123
 	return atoi(buf);
 }
+
+
+
+
+//将最高分写入文件中
+int writeFile(int score)
+{
+	FILE *fp = NULL;
+
+	//打开文件
+	fp = fopen("save.txt", "w+");
+	if (NULL == fp)
+	{
+		printf("打开文件失败\n");
+		return -1;
+	}
+
+	//将最高分写入文件中
+	fprintf(fp, "%d", score);
+
+	//关闭文件
+	fclose(fp);
+
+	return 0;
+}
+

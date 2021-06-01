@@ -31,34 +31,41 @@
 
 1622516934 c:\users\tonmin\desktop\projecttcs\transfer.h
 
-1622521188 source:d:\Ã∞≥‘…ﬂ\c-\main.c
+1622549055 source:d:\Ã∞≥‘…ﬂ\c-\main.c
 
 1622515694 d:\Ã∞≥‘…ﬂ\c-\headfunc.h
 
 1622515694 d:\Ã∞≥‘…ﬂ\c-\welcome.h
 
-1622515694 source:d:\Ã∞≥‘…ﬂ\c-\tools.c
+1622522534 source:d:\Ã∞≥‘…ﬂ\c-\tools.c
 	<windows.h>
 	<stdio.h>
 
-1622521188 source:d:\Ã∞≥‘…ﬂ\c-\welcome.c
+1622522534 source:d:\Ã∞≥‘…ﬂ\c-\welcome.c
 	<stdio.h>
 	<windows.h>
 
 1622515694 d:\Ã∞≥‘…ﬂ\c-\tools.h
 
-1622520626 source:d:\Ã∞≥‘…ﬂ\c-\game_execute_logic.c
+1622549198 source:d:\Ã∞≥‘…ﬂ\c-\game_execute_logic.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<Windows.h>
+
+1622522534 source:d:\Ã∞≥‘…ﬂ\c-\layout_map.c
+
+1622522534 source:d:\Ã∞≥‘…ﬂ\c-\song.c
+
+1622548899 source:d:\Ã∞≥‘…ﬂ\c-\variate_keep.c
 	<stdio.h>
 
-1622516203 source:d:\Ã∞≥‘…ﬂ\c-\layout_map.c
+1622548980 source:d:\Ã∞≥‘…ﬂ\c-\information_layout.c
 
-1622516203 source:d:\Ã∞≥‘…ﬂ\c-\song.c
-
-1622519729 source:d:\Ã∞≥‘…ﬂ\c-\variate_keep.c
+1622525725 source:d:\Ã∞≥‘…ﬂ\c-\file_memory.c
 	<stdio.h>
 
-1622518638 source:d:\Ã∞≥‘…ﬂ\c-\information_layout.c
-
-1622518678 source:d:\Ã∞≥‘…ﬂ\c-\file_memory.c
+1622526234 source:d:\Ã∞≥‘…ﬂ\c-\transfer.c
 	<stdio.h>
+	<windows.h>
 

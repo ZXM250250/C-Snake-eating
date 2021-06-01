@@ -52,6 +52,9 @@
 		<Unit filename="tools.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="transfer.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="variate_keep.c">
 			<Option compilerVar="CC" />
 		</Unit>
