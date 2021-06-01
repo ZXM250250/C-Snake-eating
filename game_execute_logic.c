@@ -31,7 +31,7 @@ int initSnake(void)
 	//循环创建四个节点
 	for (i = 0; i < 4; i++)
 	{
-		//分配空间
+		//分配空间 防止内存不够
 		new = malloc(sizeof(snake_t));
 		if (NULL == new)
 		{

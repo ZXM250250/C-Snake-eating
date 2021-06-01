@@ -3,6 +3,7 @@
 
 int main()
 {
+    playMusic();
     int choice;
     while(1)
     {
@@ -15,6 +16,7 @@ int main()
         if (choice == 1)
         {
             printMap();   //绘制游戏界面的地图
+
 
         showScoreTips();   //绘制游戏所得的分数和提示选项
 

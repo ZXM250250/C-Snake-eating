@@ -29,7 +29,7 @@ typedef struct _snake_t {
 
 
 //ตรทึ
-int score = 100;
+int score = 0;
 
 
 

@@ -4,6 +4,9 @@
 //»æÖÆÓÎÏ·µØÍ¼
 int printMap(void)
 {
+
+
+
 	int i = 0;
 	int j = 0;
 
