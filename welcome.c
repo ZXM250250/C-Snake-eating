@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "tools.h"
 #include <windows.h>
 //游戏初始界面
 //绘制字符画 --蛇
@@ -7,6 +6,7 @@ int printSnake(void)
 {
 	//清屏
 	system("cls");
+	system("color 74");
 
 	gotoXY(35, 1);
 	setColor(6);

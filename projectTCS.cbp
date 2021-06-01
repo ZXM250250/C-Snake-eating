@@ -31,21 +31,18 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="headfunc.h" />
 		<Unit filename="main.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="new.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="tools.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="tools.h" />
+		<Unit filename="transfer.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="welcome.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="welcome.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

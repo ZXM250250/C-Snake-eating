@@ -2,9 +2,7 @@
 1622467219 source:c:\users\tonmin\desktop\projecttcs\colour.c
 	<stdio.h>
 
-1622514126 source:c:\users\tonmin\desktop\projecttcs\main.c
-	"headfunc.h"
-	"welcome.h"
+1622517410 source:c:\users\tonmin\desktop\projecttcs\main.c
 
 1622467219 source:c:\users\tonmin\desktop\projecttcs\new.c
 
@@ -21,12 +19,15 @@
 	<windows.h>
 	<stdio.h>
 
-1622512102 source:c:\users\tonmin\desktop\projecttcs\welcome.c
+1622517948 source:c:\users\tonmin\desktop\projecttcs\welcome.c
 	<stdio.h>
-	"tools.h"
 	<windows.h>
 
 1622507445 c:\users\tonmin\desktop\projecttcs\tools.h
 
-1622513113 source:c:\users\tonmin\desktop\projecttcs\transfer.c
+1622517315 source:c:\users\tonmin\desktop\projecttcs\transfer.c
+	<stdio.h>
+	<windows.h>
+
+1622516934 c:\users\tonmin\desktop\projecttcs\transfer.h
 
