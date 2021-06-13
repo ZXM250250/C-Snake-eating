@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<windows.h>
+//绘制说明界面和退出游戏的界面
 void complain()
 {
     int i = 0;

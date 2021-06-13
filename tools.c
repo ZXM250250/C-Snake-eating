@@ -1,4 +1,5 @@
 #include <windows.h>
+
 #include <stdio.h>
 //改变光标的位置函数
 void gotoXY(int x,int y)

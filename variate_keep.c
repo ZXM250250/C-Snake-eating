@@ -1,7 +1,6 @@
 
 
 
-
 //这是是一个 整个游戏中 全局变量的保存模块  也就是信息模块    以及 进行文件存储功能的模块   由于不知道codeblocks怎么去设置各个模块共享的变量
 //所以这里参照java 面对对象的思想  利用方法返回变量的值  外界只能调用方法  而不能访问到变量 相当于 pravite 属性  也就是一个javabean类的作用
 
@@ -15,9 +14,6 @@
 #define RIGHT 4
 
 
-
-
-
 //链表节点类型声明  也就是蛇身
 typedef struct _snake_t {
     //数据域
@@ -25,12 +21,11 @@ typedef struct _snake_t {
     int y;
 
     struct _snake_t *next;//指针域
-}snake_t;
+} snake_t;
 
 
 //得分
 int score = 0;
-
 
 
 //吃掉每一个食物的得分
@@ -52,55 +47,63 @@ snake_t *head = NULL;
 snake_t *foodNode = NULL;
 
 
-void setsleepTime(int num){
+void setsleepTime(int num) {
 
-sleepTime =num; }
+    sleepTime = num;
+}
 
-int getsleepTime(){
-return sleepTime;}
+int getsleepTime() {
+    return sleepTime;
+}
 
-void setendStatus(int num){
+void setendStatus(int num) {
     endStatus = num;
 }
 
-int getendStatus(){
-return endStatus;}
-
-int getadd(){
-return add;
-}
-void setadd(int num){
-    add =num;
+int getendStatus() {
+    return endStatus;
 }
 
-int getscore(){
+int getadd() {
+    return add;
+}
+
+void setadd(int num) {
+    add = num;
+}
+
+int getscore() {
     return score;
 }
 
-void setscore(int num){
-    score=num;
+void setscore(int num) {
+    score = num;
 }
 
-int getdirection(){
+int getdirection() {
     return direction;
 }
 
-void setdirection(int num){
-    direction =num;
+
+void setdirection(int num) {
+    direction = num;
 }
-struct _snake_t *gethead(){
-return head;
+
+
+struct _snake_t *gethead() {
+    return head;
 };
 
 
-void sethead(struct _snake_t *h){
-head = h;
+
+void sethead(struct _snake_t *h) {
+    head = h;
 }
 
-struct _snake_t *getfoodNode(){
-return foodNode;
+struct _snake_t *getfoodNode() {
+    return foodNode;
 };
 
-void setfoodNode(struct _snake_t *h){
+void setfoodNode(struct _snake_t *h) {
     foodNode = h;
 }

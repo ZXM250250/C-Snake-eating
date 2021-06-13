@@ -38,8 +38,8 @@ int initSnake(void)
 			printf("malloc initSnake failed....\n");
 			return -1;
 		}
+		//清空缓存
 		memset(new, 0, sizeof(snake_t));
-
 		//赋值
 		new->x = 24 + i * 2;
 		new->y = 5;
@@ -48,8 +48,6 @@ int initSnake(void)
 		new->next = gethead();
 		sethead(new);
 	}
-
-
 	//遍历链表
 	tmp = gethead();
 	while (NULL != tmp)
@@ -71,8 +69,6 @@ int initSnake(void)
 
 		tmp = tmp->next;
 	}
-
-
 	return 0;
 }
 
@@ -107,7 +103,6 @@ int randFood(void)
 		{
 			//保证X坐标是偶数 同时不应该出现在墙上(2, 54)
 			foodNode->x = rand() % 53 + 3;
-
 			if (0 == foodNode->x % 2)
 			{
 				break;
@@ -298,7 +293,8 @@ int speedDown(void)
 
 
 
-//控制蛇的移动    还没有写完 回来继续改
+//控制蛇的移动    它的主要逻辑就是 只去改变头节点的位置 而把最后以一个位置的节点舍去 从而达到移动的效果
+//如果是吃到食物的话
 int moveSnake(void)
 {
 	snake_t *new = NULL;
@@ -425,7 +421,7 @@ int isHitWall(void)
 	return 0;
 }
 
-//判断是否咬到自己
+//判断是否咬到自己   用头节点去与任何一个身体的节点做比较  如果xy相同
 int isBitSelf(void)
 {
     snake_t *head = gethead();
@@ -449,10 +445,7 @@ int isBitSelf(void)
 }
 
 
-
-
-
-//销毁蛇
+//销毁蛇   释放蛇身体的所有节点
 int destroySnake(void)
 {
 	snake_t *tmp = NULL;

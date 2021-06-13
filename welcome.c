@@ -2,6 +2,9 @@
 #include <windows.h>
 //游戏初始界面
 //绘制字符画 --蛇
+
+
+
 int printSnake(void)
 {
 	//清屏
